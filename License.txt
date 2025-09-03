@@ -1,0 +1,85 @@
+---------------------------------------------------------
+Restaurant – HTML Template
+---------------------------------------------------------
+
+Item Name: Restaurant – Responsive HTML Template
+Author: Hello Coders BD
+Version: 1.0.0
+Release Date: 01-09-2025
+
+
+---------------------------------------------------------
+CREDITS & LICENSES
+---------------------------------------------------------
+
+This template is licensed for use under the Envato Market 
+Standard Licenses. By purchasing this item, you are granted 
+a license to use it in accordance with Envato's terms:
+
+Regular License:
+- You can use this template for ONE end product, 
+  which end users are not charged for.
+- You cannot resell, redistribute, or share the source files 
+  in any way.
+
+Extended License:
+- You can use this template for ONE end product that 
+  end users CAN be charged for.
+- You cannot resell, redistribute, or share the source files 
+  in any way.
+
+For full details on Envato Market Licenses, visit:
+https://themeforest.net/licenses/standard
+
+
+Fonts:
+- Poppins (Google Fonts) – SIL Open Font License (OFL)
+  https://fonts.google.com/specimen/Poppins
+- Playfair Display (Google Fonts) – SIL Open Font License (OFL)
+  https://fonts.google.com/specimen/Playfair+Display
+
+Icons:
+- Font Awesome (Free) – CC BY 4.0 License
+  https://fontawesome.com/
+- Remix Icon – MIT License
+  https://remixicon.com/
+
+Images (Preview Only, Not Included in Download):
+- Unsplash – Free License
+  https://unsplash.com/
+- Pexels – Free License
+  https://pexels.com/
+
+Scripts / Libraries:
+- Swiper.js (if used for sliders) – MIT License
+  https://swiperjs.com/
+- AOS.js (if used for animations) – MIT License
+  https://michalsnik.github.io/aos/
+
+[Note: If you did not use jQuery or Bootstrap, 
+do not list them here. Only keep the libraries 
+actually used in your template.]
+
+
+---------------------------------------------------------
+NOTES
+---------------------------------------------------------
+- All third-party resources used in this template are free 
+  for commercial use with attribution (as per their license).
+- Preview/demo images are used for illustration only and 
+  are NOT included in the downloadable package. 
+- Buyers should replace demo images with their own licensed assets.
+
+
+---------------------------------------------------------
+SUPPORT
+---------------------------------------------------------
+
+For questions, bug reports, or support requests, please 
+contact:
+hellocoders.info@gmail.com
+
+
+---------------------------------------------------------
+© 2025 Hello Coders BD. 
+All rights reserved.

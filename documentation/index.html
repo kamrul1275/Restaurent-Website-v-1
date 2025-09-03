@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant – HTML Template Documentation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Documentation for Restaurant HTML Template (Installation, Structure, Customization, Forms, Credits, Changelog)">
+  <style>
+    :root{--bg:#0f0f10;--panel:#16181b;--text:#e6e6e6;--muted:#9aa0a6;--accent:#ffd54a;--border:#2a2d31}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+    nav{background:var(--panel);border-right:1px solid var(--border);padding:20px;position:sticky;top:0;height:100vh;overflow:auto}
+    nav h2{font-size:16px;margin:0 0 12px;color:#fff;letter-spacing:.5px}
+    nav a{display:block;padding:8px 0;color:var(--muted)} nav a.active,nav a:hover{color:#fff}
+    main{padding:32px 28px}
+    h1{font-size:32px;margin:0 0 6px} h2{font-size:22px;margin:32px 0 8px} h3{font-size:18px;margin:20px 0 8px}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0}
+    code,kbd,pre{background:#0b0c0e;color:#d6e1ff;border:1px solid var(--border);border-radius:6px}
+    pre{padding:14px;overflow:auto} code{padding:2px 6px}
+    .grid{display:grid;gap:16px} .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    ul{margin:8px 0 16px}
+    .muted{color:var(--muted)}
+    footer{margin-top:40px;color:var(--muted)}
+    @media (max-width:960px){.wrap{grid-template-columns:1fr} nav{position:relative;height:auto}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <h2>Documentation</h2>
+    <a href="#intro" class="active">Introduction</a>
+    <a href="#features">Features</a>
+    <a href="#structure">File Structure</a>
+    <a href="#install">Installation</a>
+    <a href="#customize">Customization</a>
+    <a href="#forms">Forms (Contact/Reservation)</a>
+    <a href="#credits">Credits & Licenses</a>
+    <a href="#changelog">Changelog</a>
+    <a href="#faq">FAQ & Support</a>
+  </nav>
+
+  <main>
+    <h1>Restaurant – HTML Template</h1>
+    <p class="muted">Version: <strong>1.0.0</strong> · Last updated: <span id="today"></span></p>
+
+    <section id="intro" class="card">
+      <h2>Introduction</h2>
+      <p>Thank you for purchasing <strong>Restaurant</strong> HTML template. This document explains installation, file structure, customization (colors/typography), working forms, and licensing details. If you face any issue, check the FAQ or contact support.</p>
+    </section>
+
+    <section id="features" class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Modern, premium dark theme with gold accent</li>
+        <li>Fully responsive (320px–1920px+), mobile-first</li>
+        <li>Semantic HTML5, accessible markup (alt, headings)</li>
+        <li>Minified & unminified CSS/JS, WebP + JPG fallbacks</li>
+        <li>Working <strong>Contact</strong> & <strong>Book a Table</strong> forms (AJAX + PHP)</li>
+        <li>Ready sections: Home, Menus, About, Our Chefs, Blogs, Contact</li>
+      </ul>
+    </section>
+
+    <section id="structure" class="card">
+      <h2>File Structure</h2>
+      <pre><code>Restaurant-HTML/
+├─ documentation/
+│  └─ index.html
+├─ dist/
+│  ├─ css/
+│  │  ├─ restaurant.css
+│  │  └─ restaurant.min.css
+│  ├─ js/
+│  │  ├─ restaurant.js
+│  │  └─ restaurant.min.js
+│  ├─ images/  (webp + jpg fallback)
+│  ├─ index.html
+│  ├─ about.html
+│  ├─ menu.html
+│  ├─ chef.html
+│  ├─ blog.html
+│  ├─ booktable.html
+│  └─ contact.html
+├─ mailer/
+│  └─ mail.php
+├─ README.md
+└─ License.txt</code></pre>
+      <p class="muted">Note: Preview images in the live demo are used for demonstration only and are <strong>not included</strong> in the download package.</p>
+    </section>
+
+    <section id="install" class="card">
+      <h2>Installation</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Local</h3>
+          <ol>
+            <li>Unzip the package.</li>
+            <li>Open <code>dist/index.html</code> in any modern browser.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Hosting</h3>
+          <ol>
+            <li>Upload the <code>dist/</code> folder to your hosting root/public_html.</li>
+            <li>Ensure <code>mailer/mail.php</code> has correct e‑mail settings (see Forms section).</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="customize" class="card">
+      <h2>Customization</h2>
+      <h3>Colors</h3>
+      <p>Edit CSS variables in <code>css/restaurant.css</code>:</p>
+      <pre><code>:root{
+  --color-bg:#0f0f10;
+  --color-text:#e6e6e6;
+  --color-accent:#ffd54a; /* gold */
+}</code></pre>
+
+      <h3>Typography</h3>
+      <p>Update font imports and scale in <code>css/restaurant.css</code>. Example:</p>
+      <pre><code>h1{font-size:clamp(28px,4vw,48px);line-height:1.2}
+h2{font-size:clamp(22px,3vw,32px)}</code></pre>
+
+      <h3>Logos & Images</h3>
+      <p>Replace files in <code>images/</code>. Provide both <code>.webp</code> and <code>.jpg</code> for compatibility.</p>
+    </section>
+
+    <section id="forms" class="card">
+      <h2>Forms (Contact & Book a Table)</h2>
+      <p>Forms submit via AJAX to <code>mailer/mail.php</code>.</p>
+      <h3>1) Basic Setup</h3>
+      <ol>
+        <li>Open <code>mailer/mail.php</code> and set <code>$TO_EMAIL</code> to your recipient address.</li>
+        <li>(Optional) Enable SMTP using PHPMailer (instructions inside the file).</li>
+      </ol>
+
+      <h3>2) Contact Form – example HTML</h3>
+      <pre><code>&lt;form id="contactForm" action="mailer/mail.php" method="POST"&gt;
+  &lt;input type="hidden" name="form_type" value="contact"&gt;
+  &lt;input name="name" required&gt;
+  &lt;input type="email" name="email" required&gt;
+  &lt;input name="phone"&gt;
+  &lt;textarea name="message" required&gt;&lt;/textarea&gt;
+  &lt;input type="text" name="website" class="hidden" style="display:none"&gt; &lt;!-- honeypot --&gt;
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+      <h3>3) Reservation Form – example HTML</h3>
+      <pre><code>&lt;form id="bookForm" action="mailer/mail.php" method="POST"&gt;
+  &lt;input type="hidden" name="form_type" value="reservation"&gt;
+  &lt;input name="name" required&gt;
+  &lt;input type="tel" name="phone" required&gt;
+  &lt;input type="number" name="persons" min="1" max="20" required&gt;
+  &lt;input type="date" name="date" required&gt;
+  &lt;input type="time" name="time" required&gt;
+  &lt;textarea name="message"&gt;&lt;/textarea&gt;
+  &lt;input type="text" name="website" class="hidden" style="display:none"&gt; &lt;!-- honeypot --&gt;
+  &lt;button type="submit"&gt;Book a Table&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+      <h3>4) AJAX (optional)</h3>
+      <pre><code>document.querySelectorAll('form').forEach(f=>{
+  f.addEventListener('submit',async e=>{
+    e.preventDefault();
+    const res = await fetch(f.action,{method:'POST',body:new FormData(f)});
+    const data = await res.json();
+    alert(data.message);
+    if(data.success) f.reset();
+  });
+});</code></pre>
+    </section>
+
+    <section id="credits" class="card">
+      <h2>Credits & Licenses</h2>
+      <ul>
+        <li><strong>Fonts:</strong> Google Fonts (e.g., Poppins, Playfair Display) – <a href="https://fonts.google.com/license">Open Font License</a></li>
+        <li><strong>Icons:</strong> Font Awesome / Remix Icon – Free License</li>
+        <li><strong>Images (Preview only):</strong> Unsplash / Pexels – Free to use. <em>Preview images are not included in the download.</em></li>
+        <li><strong>Scripts:</strong> (If used) Swiper / Glide.js for sliders, Vanilla JS utilities</li>
+      </ul>
+      <p class="muted">আপনি যদি ভিন্ন কোনো ছবি/ফন্ট/আইকন যুক্ত করেন, অনুগ্রহ করে নিজ দায়িত্বে লাইসেন্স যাচাই করুন এবং এখানে সোর্স আপডেট করুন।</p>
+    </section>
+
+    <section id="changelog" class="card">
+      <h2>Changelog</h2>
+      <ul>
+        <li><strong>v1.0.0</strong> – Initial release
+          <ul>
+            <li>Pages: Home, Menus, About, Our Chefs, Blogs, Contact, Book a Table</li>
+            <li>Working forms (contact + reservation), minified assets, documentation</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="faq" class="card">
+      <h2>FAQ & Support</h2>
+      <h3>Images included?</h3>
+      <p>No. Preview images are for demonstration only.</p>
+      <h3>Need help?</h3>
+      <p>Open an issue in the repo or email <a href="mailto:support@example.com">support@example.com</a> with your purchase code.</p>
+    </section>
+
+    <footer>© <span id="year"></span> Restaurant HTML Template. All rights reserved.</footer>
+  </main>
+</div>
+<script>
+  document.getElementById('year').textContent=new Date().getFullYear();
+  document.getElementById('today').textContent=new Date().toISOString().slice(0,10);
+</script>
+</body>
+</html>
