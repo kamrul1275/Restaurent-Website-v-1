@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Mobile-first: Ensures site is responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon (browser tab icon) -->
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Primary SEO Meta Description -->
+    <meta
+      name="description"
+      content="Hello Dine – premium restaurant & reservation template"
+    />
+
+    <!-- Open Graph (For Social Media Sharing Preview) -->
+    <meta property="og:title" content="Hello Dine Restaurant" />
+    <meta
+      property="og:description"
+      content="Fine dine experience with online reservation"
+    />
+    <meta property="og:image" content="images/og-cover.jpg" />
+
+    <!-- Browser Theme Color (For mobile address bar coloring) -->
+    <meta name="theme-color" content="#0b0b0b" />
+
+    <!-- SEO-Friendly Title -->
+    <title>Menu | Hello Dine</title>
+
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <!-- Google Fonts (Typography) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons (For social icons, UI icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Decorative Font (Optional Branding Font) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+      <div class="logo-container">
+        <div class="logo">HELLO DINE</div>
+        <div class="tagline">Fine Dining Experience</div>
+      </div>
+
+      <div class="dining-scene">
+        <div class="plate"></div>
+        <div class="utensil fork"></div>
+        <div class="utensil knife"></div>
+        <div class="glass"></div>
+        <div class="wine-glass"></div>
+
+        <div class="sparkles">
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+        </div>
+      </div>
+
+      <div class="loading-text">Preparing Your Experience...</div>
+    </div>
+
+    <!-- Navbar -->
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/hellodinelogo.png"
+                alt="Hellodine Logo"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html" aria-current="page">MENUS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="chef.html">OUR CHEFS</a></li>
+            <li><a href="blog.html">BLOGS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+
+          <div class="nav-btn-bar">
+            <a href="booktable.html" class="book-table-btn">
+              <div class="btn-text">
+                <span class="top-text">Book Table</span>
+                <span class="bottom-text">Book Table</span>
+              </div>
+            </a>
+
+            <div
+              class="menu-toggle"
+              id="mobile-menu"
+              aria-controls="navMenu"
+              aria-label="Mobile Menu Toggle"
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Menu -->
+
+    <section class="parallax-section">
+      <div class="parallax-overlay"></div>
+      <div class="content">
+        <h2 class="parallax-heading">Our Menu</h2>
+        <p>
+          Experience the art of dining with
+          <span class="highlight">flavors that linger</span> and moments that
+          matter.
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu cards  -->
+
+    <section class="menu">
+      <div class="menu-container">
+        <header class="menu-header">
+          <h1>A glimpse of Our Menu</h1>
+          <p>Delicious meals for every time of day</p>
+        </header>
+
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-category="breakfast">
+            Breakfast
+          </button>
+          <button class="tab-btn" data-category="lunch">Lunch</button>
+          <button class="tab-btn" data-category="dinner">Dinner</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="images/hellodinelogo.png"
+            alt="Hello Dine Logo"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="footer-content">
+          <div>
+            <div class="visit-us-label">VISIT US</div>
+            <div class="address-info">
+              <p>HelloDine, Dhamrai, Dhaka</p>
+              <p>Daily - 11:00 am to 11:00 pm</p>
+              <p>demoemail@gmail.com</p>
+              <p>Booking Request: +88 01307-450464</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="newsletter-section">
+            <h3>Our Newsletter</h3>
+            <p class="newsletter-subtitle">
+              Subscribe us & Get 25% Off. Get latest updates.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="email-input"
+                placeholder="Enter your email"
+                required
+              />
+              <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">© 2025 All Rights Reserved</div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          <div class="credits">Crafted by <a href="#">Hello Codes BD</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>
